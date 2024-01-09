@@ -1,5 +1,5 @@
 # Hangman-Sockets
-Hangman-Sockets is a personal take on the classic game hangman using TCP sockets in Python.
+Hangman-Sockets is a personal take on the classic game hangman using TCP sockets in Python with Pickle encoding/decoding.
 
 ## Features
 - **Network-Based Gameplay**: Leverages TCP sockets for playing hangman over a network in a client-server setup.
