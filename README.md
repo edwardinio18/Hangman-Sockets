@@ -1,6 +1,10 @@
 # Hangman-Sockets
 Hangman-Sockets is a personal take on the classic game hangman using TCP sockets in Python with Pickle encoding/decoding.
 
+## Preview
+#### Client
+![Client](assets/client.png)
+
 ## Features
 - **Network-Based Gameplay**: Leverages TCP sockets for playing hangman over a network in a client-server setup.
 - **Dynamic Word Input**: Server allows custom word or phrase input, offering varied and replayable game experiences.
@@ -8,13 +12,20 @@ Hangman-Sockets is a personal take on the classic game hangman using TCP sockets
 - **Visible Progress Tracking**: The client interface displays the word's current state, updating with each successful guess.
 
 ## Usage
-1. Start the server:
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:edwardinio18/Hangman-Sockets.git
+2. Change `IP_ADDRESS` in `client.py` to match the IP address of your device on your local network (on Mac you can find this by running ```ifconfig | grep "inet "``` and on Windows by running ```ipconfig``` in the command prompt and looking for the IPv4 address under the network adapter you are using):
     ```bash
-    python server.py
+    cd Hangman-Sockets
+    vim client.py
+3. Start the server:
+    ```bash
+    python3 server.py
     ```
-2. Start the client:
+4. Start the client:
     ```bash
-    python client.py
+    python3 client.py
     ```
 
 ## Contributing
